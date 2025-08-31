@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Claims - Simply Forever Wiki</title>
+            <meta name="description" content="Learn how to protect your builds with land claims on Simply Forever">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Simply Forever Logo" class="logo-img">
+                <span class="logo-text">Simply Forever</span>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="rules.html" class="nav-link" role="menuitem">Rules</a></li>
+                <li role="none"><a href="join.html" class="nav-link" role="menuitem">How to Join</a></li>
+                <li role="none"><a href="community.html" class="nav-link" role="menuitem">Community</a></li>
+                <li role="none"><a href="https://map.simplyforever.xyz" class="nav-link external-link" role="menuitem" target="_blank" rel="noopener">Live Map</a></li>
+            </ul>
+            
+            <div class="nav-external">
+                <a href="https://store.simplyforever.xyz" class="external-link" target="_blank" rel="noopener">Store</a>
+                <a href="wiki.html" class="external-link active">Wiki</a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="wiki.html">Wiki</a> → Land Claims
+                </nav>
+                <h1 class="page-title">Land Claims</h1>
+                <p class="page-subtitle">Protect your builds and manage your claimed areas</p>
+            </div>
+        </header>
+
+        <!-- Land Claims Overview -->
+        <section class="claims-overview">
+            <div class="container">
+                <div class="overview-card">
+                    <h2>🏠 Land Claims System</h2>
+                    <p>Our land claims system allows you to protect your builds, farms, and areas from griefing and unwanted modifications. Claim blocks are earned through playtime, giving active players more space to protect their creations.</p>
+                    <div class="claim-blocks-info">
+                        <h3>Claim Block System</h3>
+                        <p><strong>You earn 150 claim blocks every hour you play</strong> on the server. These blocks can be used to create protected areas where only you and trusted players can build, break blocks, or interact with containers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Claims Demo GIF -->
+        <section class="claims-demo">
+            <div class="container">
+                <h2 class="section-title">📹 Claims System Demo</h2>
+                <div class="demo-container">
+                    <img src="https://aquapie.gitbook.io/simply-survival/~gitbook/image?url=https%3A%2F%2F65686007-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FRRmynbhIL0wsgqqxD7ES%252Fuploads%252F2v1wHj5yXuv0Ff2WuMn6%252F06284-ezgif.com-video-to-gif-converter.gif%3Falt%3Dmedia%26token%3D9365f075-dd7b-4baf-95e2-b1b746253b5f&width=768&dpr=1&quality=100&sign=9a7a909c&sv=2" alt="Land Claims System Demo" class="demo-gif">
+                    <p class="demo-caption">Watch how the land claims system works in action</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Claim Commands -->
+        <section class="claim-commands">
+            <div class="container">
+                <h2 class="section-title">⚡ Land Claim Commands</h2>
+                <div class="commands-grid">
+                    <div class="command-card">
+                        <h3><code>/abandonclaim</code></h3>
+                        <p>Deletes the claim you're currently standing in. This will remove all protection from that area and return the claim blocks to your pool.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/abandonclaim</code>
+                        </div>
+                        <div class="command-warning">
+                            <strong>⚠️ Warning:</strong> This action cannot be undone. Make sure you want to remove protection from this area.
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/claimexplosions</code></h3>
+                        <p>Toggles whether explosions are allowed in your claim. Useful for TNT-based builds or if you want to allow creeper explosions for natural terrain modification.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/claimexplosions</code>
+                        </div>
+                        <div class="command-tip">
+                            <strong>💡 Tip:</strong> Disabling explosion protection can be useful for TNT cannons or controlled demolition projects.
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/trust | /t</code></h3>
+                        <p>Gives another player permission to edit in your claim. They can break blocks, place blocks, and modify the terrain within your protected area.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/trust Steve</code> or <code>/t Alex</code>
+                        </div>
+                        <div class="command-tip">
+                            <strong>💡 Tip:</strong> Use this for trusted friends or team members who need to help with building projects.
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/untrust | /ut</code></h3>
+                        <p>Revokes any permissions granted to a player in your claim. They will no longer be able to modify anything within your protected area.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/untrust Steve</code> or <code>/ut Alex</code>
+                        </div>
+                        <div class="command-tip">
+                            <strong>💡 Tip:</strong> Use this if you need to remove access for someone who previously had permission.
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/containertrust | /ct</code></h3>
+                        <p>Gives a player permission to use your buttons, levers, beds, crafting gear, containers, and animals within your claim. They cannot break or place blocks.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/containertrust Steve</code> or <code>/ct Alex</code>
+                        </div>
+                        <div class="command-tip">
+                            <strong>💡 Tip:</strong> Perfect for allowing friends to use your farms, storage systems, or automated contraptions without full building access.
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/abandonallclaims</code></h3>
+                        <p>Deletes all of your claims across the server. This will remove protection from all areas you've claimed and return all claim blocks to your pool.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/abandonallclaims</code>
+                        </div>
+                        <div class="command-warning">
+                            <strong>⚠️ Warning:</strong> This action cannot be undone and will affect ALL your claims. Use with extreme caution.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Claims Work -->
+        <section class="claims-mechanics">
+            <div class="container">
+                <h2 class="section-title">🔧 How Land Claims Work</h2>
+                <div class="mechanics-grid">
+                    <div class="mechanic-card">
+                        <div class="mechanic-icon">🎯</div>
+                        <h3>Creating Claims</h3>
+                        <p>Claims are created automatically when you place a claim block or use the claim wand. The system will protect the area around you based on your available claim blocks.</p>
+                    </div>
+                    
+                    <div class="mechanic-card">
+                        <div class="mechanic-icon">🛡️</div>
+                        <h3>Protection Features</h3>
+                        <p>Protected areas prevent other players from breaking blocks, placing blocks, using containers, or interacting with redstone components unless they have permission.</p>
+                    </div>
+                    
+                    <div class="mechanic-card">
+                        <div class="mechanic-icon">⏰</div>
+                        <h3>Claim Block Earning</h3>
+                        <p>You earn 150 claim blocks for every hour you're actively playing on the server. These accumulate over time, allowing you to protect larger areas.</p>
+                    </div>
+                    
+                    <div class="mechanic-card">
+                        <div class="mechanic-icon">👥</div>
+                        <h3>Permission System</h3>
+                        <p>Grant different levels of access to other players: full trust for building, container trust for using facilities, or no access for complete protection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Claim Strategies -->
+        <section class="claim-strategies">
+            <div class="container">
+                <h2 class="section-title">💡 Claim Strategies</h2>
+                <div class="strategies-grid">
+                    <div class="strategy-card">
+                        <h3>🏗️ Building Projects</h3>
+                        <p>Claim areas before starting large building projects. This ensures your work is protected from the beginning and prevents conflicts with other players.</p>
+                        <ul>
+                            <li>Claim before you start building</li>
+                            <li>Include space for future expansion</li>
+                            <li>Consider the surrounding terrain</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-card">
+                        <h3>🌾 Farm Protection</h3>
+                        <p>Protect your farms and automated systems with claims. Use container trust to allow friends to harvest crops while keeping the redstone protected.</p>
+                        <ul>
+                            <li>Claim around your farm area</li>
+                            <li>Use container trust for harvesting</li>
+                            <li>Protect redstone mechanisms</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-card">
+                        <h3>🏠 Base Security</h3>
+                        <p>Create a secure perimeter around your base. Consider using multiple smaller claims for different areas rather than one large claim.</p>
+                        <ul>
+                            <li>Protect your main building</li>
+                            <li>Include storage areas</li>
+                            <li>Consider future expansion</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-card">
+                        <h3>🤝 Team Claims</h3>
+                        <p>Coordinate with team members to create efficient claim layouts. Share permissions appropriately to allow collaborative building.</p>
+                        <ul>
+                            <li>Plan claim boundaries together</li>
+                            <li>Use trust permissions wisely</li>
+                            <li>Consider shared facilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Claim Block Management -->
+        <section class="claim-block-management">
+            <div class="container">
+                <h2 class="section-title">💰 Claim Block Management</h2>
+                <div class="management-content">
+                    <div class="earning-info">
+                        <h3>Earning Claim Blocks</h3>
+                        <p><strong>Rate:</strong> 150 claim blocks per hour of active play</p>
+                        <p><strong>Accumulation:</strong> Blocks are earned continuously while online</p>
+                        <p><strong>Maximum:</strong> No limit on total claim blocks you can earn</p>
+                    </div>
+                    
+                    <div class="usage-tips">
+                        <h3>Efficient Usage Tips</h3>
+                        <ul>
+                            <li><strong>Start Small:</strong> Begin with smaller claims and expand as needed</li>
+                            <li><strong>Strategic Placement:</strong> Place claims to maximize protected area</li>
+                            <li><strong>Regular Review:</strong> Remove claims from areas you no longer need</li>
+                            <li><strong>Team Coordination:</strong> Work with others to avoid overlapping claims</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Scenarios -->
+        <section class="common-scenarios">
+            <div class="container">
+                <h2 class="section-title">🎭 Common Claim Scenarios</h2>
+                <div class="scenarios-grid">
+                    <div class="scenario-card">
+                        <h3>🏠 New Player Starting Out</h3>
+                        <p><strong>Situation:</strong> You've just joined and want to protect your first house.</p>
+                        <p><strong>Solution:</strong> Create a small claim around your house. As you earn more blocks, expand the claim to include your farm and storage areas.</p>
+                    </div>
+                    
+                    <div class="scenario-card">
+                        <h3>🌾 Protecting a Farm</h3>
+                        <p><strong>Situation:</strong> You have an automated farm that you want friends to be able to harvest.</p>
+                        <p><strong>Solution:</strong> Claim the farm area and use <code>/containertrust</code> to allow friends to access chests and harvest crops without building access.</p>
+                    </div>
+                    
+                    <div class="scenario-card">
+                        <h3>🏗️ Large Building Project</h3>
+                        <p><strong>Situation:</strong> You're planning a massive castle that will take weeks to build.</p>
+                        <p><strong>Solution:</strong> Claim the entire area before starting. Use <code>/trust</code> for team members who will help with construction.</p>
+                    </div>
+                    
+                    <div class="scenario-card">
+                        <h3>🤝 Team Base</h3>
+                        <p><strong>Situation:</strong> You and your team want to build a shared base together.</p>
+                        <p><strong>Solution:</strong> Have one person claim the area and use <code>/trust</code> for all team members. Consider using <code>/containertrust</code> for visitors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Back -->
+        <section class="wiki-navigation-back">
+            <div class="container">
+                <a href="wiki.html" class="back-to-wiki">← Back to Wiki</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Simply Forever</h3>
+                    <p>Your eternal Minecraft adventure awaits. Join our community and build something amazing!</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://map.simplyforever.xyz" target="_blank" rel="noopener">Live Map</a></li>
+                        <li><a href="https://store.simplyforever.xyz" target="_blank" rel="noopener">Store</a></li>
+                        <li><a href="wiki.html">Wiki</a></li>
+                        <li><a href="https://discord.gg/VCeAEcGHgf" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Server Info</h4>
+                    <ul>
+                        <li>IP: mc.simplyforever.xyz</li>
+                        <li>Version: 1.20+</li>
+                        <li>Type: Semi-Vanilla SMP</li>
+                        <li>Status: Always Online</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rules.html">Server Rules</a></li>
+                        <li><a href="join.html">How to Join</a></li>
+                        <li><a href="wiki.html">Wiki</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Simply Forever. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

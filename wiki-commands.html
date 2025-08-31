@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - Simply Forever Wiki</title>
+    <meta name="description" content="Complete list of commands available on Simply Forever server">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Simply Forever Logo" class="logo-img">
+                <span class="logo-text">Simply Forever</span>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="rules.html" class="nav-link" role="menuitem">Rules</a></li>
+                <li role="none"><a href="join.html" class="nav-link" role="menuitem">How to Join</a></li>
+                <li role="none"><a href="community.html" class="nav-link" role="menuitem">Community</a></li>
+                <li role="none"><a href="https://map.simplyforever.xyz" class="nav-link external-link" role="menuitem" target="_blank" rel="noopener">Live Map</a></li>
+            </ul>
+            
+            <div class="nav-external">
+                <a href="https://store.simplyforever.xyz" class="external-link" target="_blank" rel="noopener">Store</a>
+                <a href="wiki.html" class="external-link active">Wiki</a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="wiki.html">Wiki</a> → Commands
+                </nav>
+                <h1 class="page-title">Commands</h1>
+                <p class="page-subtitle">Complete guide to all available commands on Simply Forever</p>
+            </div>
+        </header>
+
+        <!-- Commands Overview -->
+        <section class="commands-overview">
+            <div class="container">
+                <div class="overview-card">
+                    <h2>Command Categories</h2>
+                    <p>Our server offers a comprehensive set of commands organized into logical categories. Use these commands to enhance your gameplay experience and interact with other players.</p>
+                    <div class="category-links">
+                        <a href="#teleportation" class="category-link">Teleportation</a>
+                        <a href="#homes-warps" class="category-link">Homes & Warps</a>
+                        <a href="#teams" class="category-link">Teams</a>
+                        <a href="#miscellaneous" class="category-link">Miscellaneous</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teleportation Commands -->
+        <section id="teleportation" class="command-section">
+            <div class="container">
+                <h2 class="section-title">📡 Teleportation Commands</h2>
+                <div class="commands-grid">
+                    <div class="command-card">
+                        <h3><code>/tpa player_name</code></h3>
+                        <p>Sends a teleportation request to the specified player. The player must accept your request before you can teleport to them.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/tpa Steve</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/tpahere player_name</code></h3>
+                        <p>Sends player a request to teleport to you. This is useful when you want someone to come to your location.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/tpahere Alex</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/tpaccept player_name</code></h3>
+                        <p>Accepts the teleportation request received from another player. You can also use <code>/tpaccept</code> without a name to accept the most recent request.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/tpaccept Steve</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/tpacancel player_name</code></h3>
+                        <p>Cancels/Deny a player's teleportation request. Use this if you don't want to accept someone's teleport request.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/tpacancel Steve</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/back</code></h3>
+                        <p>Teleports you to your last teleport location. Useful for returning to where you were before using a teleport command.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/back</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/dback</code></h3>
+                        <p>Teleports you to your most recent death location. Perfect for retrieving your items after dying.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/dback</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Homes and Warps Commands -->
+        <section id="homes-warps" class="command-section">
+            <div class="container">
+                <h2 class="section-title">🏠 Homes & Warps Commands</h2>
+                <div class="commands-grid">
+                    <div class="command-card">
+                        <h3><code>/sethome home_name</code></h3>
+                        <p>Sets your home at the point you did this command. You can have multiple homes with different names.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/sethome base</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/delhome home_name</code></h3>
+                        <p>Deletes your specified home. Make sure you want to remove it permanently before using this command.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/delhome oldbase</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/home | /homes</code></h3>
+                        <p>Opens the Home GUI to view and teleport to your saved homes. Use <code>/home home_name</code> to go directly to a specific home.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/home</code> or <code>/home base</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/warp | /warps</code></h3>
+                        <p>Opens the Warp GUI to explore and teleport to available public warps. Use <code>/warp warp_name</code> to go directly to a specific warp.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/warp</code> or <code>/warp spawn</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Commands -->
+        <section id="teams" class="command-section">
+            <div class="container">
+                <h2 class="section-title">👥 Team Commands</h2>
+                <div class="commands-grid">
+                    <div class="command-card">
+                        <h3><code>/team join team_name</code></h3>
+                        <p>Joins the specified team. You can only be in one team at a time.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team join Builders</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/team create team_name</code></h3>
+                        <p>Creates a new team with that name. You'll automatically become the team leader.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team create Warriors</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/team leave team_name</code></h3>
+                        <p>Leaves the current team. If you're the leader, the team will be disbanded.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team leave</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/team invite player_name</code></h3>
+                        <p>Invites the specified player to the team. They'll receive a notification and can accept or decline.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team invite Steve</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/team sethome home_name</code></h3>
+                        <p>Sets the location of the team home. All team members can teleport to this location.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team sethome headquarters</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/team home</code></h3>
+                        <p>Teleports to the teams home location. Only works if a team home has been set.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team home</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/team chat</code></h3>
+                        <p>The player will be moved to the team chat. All further messages will go there until you switch back to global chat.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team chat</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/team pvp</code></h3>
+                        <p>Enables/Disables PvP within your team members. Useful for training or friendly sparring.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/team pvp</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Miscellaneous Commands -->
+        <section id="miscellaneous" class="command-section">
+            <div class="container">
+                <h2 class="section-title">🔧 Miscellaneous Commands</h2>
+                <div class="commands-grid">
+                    <div class="command-card">
+                        <h3><code>/voteall</code></h3>
+                        <p>Displays official voting website links in chat, allowing players to vote for the server and earn rewards.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/voteall</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/sell</code></h3>
+                        <p>Opens a GUI to place items for automatic sale upon exit. Great for selling excess materials.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/sell</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/shop</code></h3>
+                        <p>Displays a categorized GUI for buying and selling items. Access to all available shop items.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/shop</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/pay</code></h3>
+                        <p>Transfers in-game currency to another player. Useful for trading or helping friends.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/pay Steve 1000</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/afk</code></h3>
+                        <p>Marks player as temporarily inactive. Useful when you need to step away briefly.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/afk</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/bal</code></h3>
+                        <p>Shows player's current currency balance. Check your wealth before making purchases.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/bal</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/baltop</code></h3>
+                        <p>Lists top players by in-game currency balance. See who's the richest on the server.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/baltop</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/sit</code></h3>
+                        <p>Allows player to sit on a block or location. Great for roleplay or taking a break.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/sit</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-card">
+                        <h3><code>/ah</code></h3>
+                        <p>Opens an interactive GUI for bidding items in the auction house. Buy and sell items with other players.</p>
+                        <div class="command-example">
+                            <strong>Example:</strong> <code>/ah</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Back -->
+        <section class="wiki-navigation-back">
+            <div class="container">
+                <a href="wiki.html" class="back-to-wiki">← Back to Wiki</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Simply Forever</h3>
+                    <p>Your eternal Minecraft adventure awaits. Join our community and build something amazing!</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://map.simplyforever.xyz" target="_blank" rel="noopener">Live Map</a></li>
+                        <li><a href="https://store.simplyforever.xyz" target="_blank" rel="noopener">Store</a></li>
+                        <li><a href="wiki.html">Wiki</a></li>
+                        <li><a href="https://discord.gg/VCeAEcGHgf" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Server Info</h4>
+                    <ul>
+                        <li>IP: mc.simplyforever.xyz</li>
+                        <li>Version: 1.20+</li>
+                        <li>Type: Semi-Vanilla SMP</li>
+                        <li>Status: Always Online</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rules.html">Server Rules</a></li>
+                        <li><a href="join.html">How to Join</a></li>
+                        <li><a href="wiki.html">Wiki</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Simply Forever. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

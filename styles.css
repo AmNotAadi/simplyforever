@@ -15,6 +15,12 @@
     --text-muted: #808080;
     --text-accent: #d0d0d0;
     
+    /* Mobile-Enhanced Text Colors */
+    --text-primary-mobile: #f0f0f0;
+    --text-secondary-mobile: #d0d0d0;
+    --text-muted-mobile: #a0a0a0;
+    --text-accent-mobile: #e8e8e8;
+    
     /* Accent Colors (Subtle) */
     --accent-primary: #4a7c59;
     --accent-secondary: #8b7355;
@@ -1422,6 +1428,23 @@ section {
 }
 
 @media (max-width: 768px) {
+    /* Mobile Text Color Enhancements */
+    body {
+        color: var(--text-primary-mobile);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-accent-mobile);
+    }
+    
+    p {
+        color: var(--text-secondary-mobile);
+    }
+    
+    .text-muted {
+        color: var(--text-muted-mobile) !important;
+    }
+    
     .nav-menu,
     .nav-external {
         display: none;
@@ -1469,6 +1492,7 @@ section {
         padding: 0.75rem 1rem;
         border-radius: 6px;
         margin-bottom: 0.25rem;
+        color: var(--text-primary-mobile);
     }
     
     .hero-title {
@@ -1516,6 +1540,29 @@ section {
     .server-ip-section {
         margin: 0 1rem 3rem;
         padding: 1.5rem;
+    }
+    
+    /* Mobile Button and Card Text Enhancements */
+    .cta-button,
+    .nav-link,
+    .external-link {
+        color: var(--text-primary-mobile);
+    }
+    
+    .card h3,
+    .feature-item h3,
+    .status-card h3 {
+        color: var(--text-accent-mobile);
+    }
+    
+    .card p,
+    .feature-item p,
+    .status-card p {
+        color: var(--text-secondary-mobile);
+    }
+    
+    .page-subtitle {
+        color: var(--text-secondary-mobile);
     }
     
     .hero-container {
@@ -3371,6 +3418,27 @@ section {
 
 /* Responsive Design for Wiki */
 @media (max-width: 768px) {
+    /* Mobile Wiki Text Enhancements */
+    .wiki-button h3 {
+        color: var(--text-accent-mobile);
+    }
+    
+    .wiki-button p {
+        color: var(--text-secondary-mobile);
+    }
+    
+    .command-card h3 {
+        color: var(--text-accent-mobile);
+    }
+    
+    .command-card p {
+        color: var(--text-secondary-mobile);
+    }
+    
+    .section-title {
+        color: var(--text-accent-mobile);
+    }
+    
     .wiki-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;

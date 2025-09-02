@@ -12,9 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <!-- Navigation Bar -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
@@ -265,34 +262,22 @@
                         <h3>/quests</h3>
                         <p>Opens the main quests menu where you can browse and start available quests.</p>
                     </div>
-                    
-                    <div class="command-card">
-                        <h3>/quest list</h3>
-                        <p>Shows a list of all your currently active quests and their progress.</p>
-                    </div>
-                    
-                    <div class="command-card">
-                        <h3>/quest info</h3>
-                        <p>Displays detailed information about a specific quest you're working on.</p>
-                    </div>
-                    
-                    <div class="command-card">
-                        <h3>/quest abandon</h3>
-                        <p>Allows you to abandon a quest if you can't complete it (use sparingly as you may lose progress).</p>
+                </div>
+                
+                <div class="quest-note">
+                    <div class="note-icon">ℹ️</div>
+                    <div class="note-content">
+                        <h3>Quest System Information</h3>
+                        <p>Currently, only the <code>/quests</code> command is available. Achievement badges and daily/weekly quests are displayed within the quests interface when you use this command.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Back to Wiki -->
-        <section class="back-to-wiki">
+        <section class="wiki-navigation-back">
             <div class="container">
-                <div class="back-link">
-                    <a href="wiki.html" class="back-button">
-                        <span class="back-arrow">←</span>
-                        <span>Back to Wiki</span>
-                    </a>
-                </div>
+                <a href="wiki.html" class="back-to-wiki">← Back to Wiki</a>
             </div>
         </section>
     </main>
@@ -341,5 +326,8 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 </body>
 </html>

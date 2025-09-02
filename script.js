@@ -285,32 +285,6 @@ function initSmoothScrolling() {
 
 // ===== ACCESSIBILITY FEATURES =====
 function initAccessibilityFeatures() {
-    // Skip to main content link
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main-content';
-    skipLink.textContent = 'Skip to main content';
-    skipLink.style.cssText = `
-        position: absolute;
-        top: -40px;
-        left: 6px;
-        background: #000;
-        color: white;
-        padding: 8px;
-        text-decoration: none;
-        z-index: 1001;
-        transition: top 0.3s;
-    `;
-    
-    skipLink.addEventListener('focus', function() {
-        this.style.top = '6px';
-    });
-    
-    skipLink.addEventListener('blur', function() {
-        this.style.top = '-40px';
-    });
-    
-    document.body.insertBefore(skipLink, document.body.firstChild);
-    
     // Add main content ID if not present
     const mainContent = document.querySelector('main');
     if (mainContent && !mainContent.id) {

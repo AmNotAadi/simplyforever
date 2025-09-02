@@ -16,10 +16,10 @@
     --text-accent: #d0d0d0;
     
     /* Mobile-Enhanced Text Colors */
-    --text-primary-mobile: #f0f0f0;
-    --text-secondary-mobile: #d0d0d0;
-    --text-muted-mobile: #a0a0a0;
-    --text-accent-mobile: #e8e8e8;
+    --text-primary-mobile: #ffffff;
+    --text-secondary-mobile: #e8e8e8;
+    --text-muted-mobile: #cccccc;
+    --text-accent-mobile: #f8f8f8;
     
     /* Accent Colors (Subtle) */
     --accent-primary: #4a7c59;
@@ -1443,6 +1443,374 @@ section {
     
     .text-muted {
         color: var(--text-muted-mobile) !important;
+    }
+    
+    /* Enhanced mobile text brightness for all elements */
+    .nav-link,
+    .external-link,
+    .logo-text {
+        color: var(--text-primary-mobile) !important;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active,
+    .external-link:hover {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .hero-title,
+    .page-title,
+    .section-title {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .hero-subtitle,
+    .page-subtitle {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .server-ip {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .server-ip-label {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .link-card h3,
+    .feature-item h3,
+    .status-card h3,
+    .guarantee-text h3,
+    .feature-card h3,
+    .guideline-card h3,
+    .requirement-card h3,
+    .trouble-item h3,
+    .method-item h3,
+    .contact-method h3,
+    .guideline-item h3,
+    .stat-item h3,
+    .wiki-button h3,
+    .command-card h3,
+    .mechanic-card h3,
+    .strategy-card h3,
+    .scenario-card h3,
+    .category-card h3,
+    .tip-card h3,
+    .alternative-card h3,
+    .config-card h3,
+    .usage-card h3,
+    .trouble-card h3,
+    .rule-item h3,
+    .step-content h3,
+    .method-details h4,
+    .discord-info h2,
+    .map-info h3,
+    .store-info h3,
+    .contact-info h3,
+    .contact-form h3,
+    .overview-card h2,
+    .claim-blocks-info h3,
+    .demo-caption,
+    .access-info h3,
+    .image-caption,
+    .voice-features h3,
+    .earning-info h3,
+    .usage-tips h3 {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .link-card p,
+    .feature-item p,
+    .status-card p,
+    .guarantee-text p,
+    .feature-card p,
+    .guideline-card p,
+    .requirement-card p,
+    .trouble-item p,
+    .method-item p,
+    .contact-method p,
+    .guideline-item p,
+    .stat-item p,
+    .wiki-button p,
+    .command-card p,
+    .mechanic-card p,
+    .strategy-card p,
+    .scenario-card p,
+    .category-card p,
+    .tip-card p,
+    .alternative-card p,
+    .config-card p,
+    .usage-card p,
+    .trouble-card p,
+    .rule-item p,
+    .step-content p,
+    .method-details p,
+    .discord-info p,
+    .map-info p,
+    .store-info p,
+    .contact-info p,
+    .overview-card p,
+    .claim-blocks-info p,
+    .access-info p,
+    .image-note,
+    .voice-features li,
+    .earning-info p,
+    .usage-tips p,
+    .usage-tips li,
+    .team-commands p,
+    .control-options p,
+    .usage-tips p,
+    .mod-loader-info p,
+    .launch-tips p,
+    .setting-item,
+    .rules-content > p {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .stat-number {
+        color: var(--accent-primary) !important;
+    }
+    
+    .stat-label {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .gallery-overlay h3 {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .gallery-overlay p {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .gallery-category {
+        color: var(--accent-primary) !important;
+    }
+    
+    .image-label {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .footer-section h3,
+    .footer-section h4 {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .footer-section p,
+    .footer-section ul li a {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .footer-bottom {
+        color: var(--text-muted-mobile) !important;
+    }
+    
+    .form-label {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .form-input,
+    .form-textarea,
+    .form-select {
+        color: var(--text-primary-mobile) !important;
+    }
+    
+    .form-input::placeholder,
+    .form-textarea::placeholder {
+        color: var(--text-muted-mobile) !important;
+    }
+    
+    .command-example strong {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .command-example code {
+        color: var(--accent-primary) !important;
+    }
+    
+    .command-warning strong {
+        color: var(--error) !important;
+    }
+    
+    .command-tip strong {
+        color: var(--success) !important;
+    }
+    
+    .reference-card li,
+    .strategy-card li,
+    .category-card li,
+    .rule-item li {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .whitelist-step h4,
+    .whitelist-note h3 {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .whitelist-step p,
+    .whitelist-note p {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .detail-card h3,
+    .next-step-item h3 {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .detail-card p,
+    .next-step-item p,
+    .detail-note {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .requirement-card ul li {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .store-feature,
+    .discord-feature,
+    .map-feature {
+        background: var(--bg-tertiary) !important;
+    }
+    
+    .feature-text,
+    .discord-feature,
+    .map-feature {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .store-note {
+        color: var(--text-muted-mobile) !important;
+    }
+    
+    .status-highlight {
+        background: var(--bg-tertiary) !important;
+    }
+    
+    .highlight-text {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .discord-title {
+        color: var(--text-accent-mobile) !important;
+    }
+    
+    .discord-status {
+        color: var(--accent-primary) !important;
+    }
+    
+    .channel {
+        color: var(--text-secondary-mobile) !important;
+    }
+    
+    .channel:hover {
+        color: white !important;
+    }
+    
+    .map-player,
+    .map-build,
+    .map-village {
+        color: white !important;
+    }
+    
+    /* Enhanced mobile icon brightness */
+    .link-icon,
+    .feature-icon,
+    .guarantee-icon,
+    .stat-icon,
+    .wiki-button-icon,
+    .mechanic-icon,
+    .category-icon,
+    .tip-icon,
+    .alternative-icon,
+    .config-icon,
+    .usage-icon,
+    .trouble-icon,
+    .rule-icon,
+    .step-number,
+    .method-icon,
+    .highlight-icon,
+    .btn-icon {
+        filter: brightness(1.2) !important;
+    }
+    
+    /* Enhanced mobile button and interactive element brightness */
+    .cta-button,
+    .secondary-button,
+    .copy-ip-btn,
+    .submit-btn,
+    .category-btn,
+    .category-link,
+    .download-button,
+    .back-to-wiki {
+        background: var(--button-primary) !important;
+        color: white !important;
+        filter: brightness(1.1) !important;
+    }
+    
+    .cta-button:hover,
+    .secondary-button:hover,
+    .copy-ip-btn:hover,
+    .submit-btn:hover,
+    .category-btn:hover,
+    .category-link:hover,
+    .download-button:hover,
+    .back-to-wiki:hover {
+        background: var(--button-hover) !important;
+        filter: brightness(1.2) !important;
+    }
+    
+    /* Enhanced mobile card and background brightness */
+    .link-card,
+    .feature-item,
+    .status-card,
+    .feature-card,
+    .guideline-card,
+    .requirement-card,
+    .trouble-item,
+    .method-item,
+    .contact-method,
+    .guideline-item,
+    .stat-item,
+    .wiki-button,
+    .command-card,
+    .mechanic-card,
+    .strategy-card,
+    .scenario-card,
+    .category-card,
+    .tip-card,
+    .alternative-card,
+    .config-card,
+    .usage-card,
+    .trouble-card,
+    .rule-item,
+    .step-card,
+    .reference-card,
+    .overview-card,
+    .claim-blocks-info,
+    .access-info,
+    .image-card,
+    .voice-features,
+    .whitelist-step,
+    .whitelist-note,
+    .detail-card,
+    .next-step-item,
+    .discord-preview,
+    .map-placeholder,
+    .contact-form-content {
+        background: var(--bg-card) !important;
+        border-color: var(--border-light) !important;
+        filter: brightness(1.05) !important;
+    }
+    
+    /* Enhanced mobile form input brightness */
+    .form-input,
+    .form-textarea,
+    .form-select {
+        background: var(--bg-tertiary) !important;
+        border-color: var(--border-light) !important;
+        filter: brightness(1.1) !important;
     }
     
     .nav-menu,
@@ -4247,5 +4615,179 @@ section {
         width: 100%;
         max-width: 200px;
         text-align: center;
+    }
+}
+
+/* Auction House Page Styles */
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.method-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.method-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px var(--shadow-medium);
+    border-color: var(--accent-primary);
+}
+
+.method-card:hover::before {
+    opacity: 1;
+}
+
+.method-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.method-card h3 {
+    color: var(--text-accent);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.method-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.method-steps {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.method-steps h4 {
+    color: var(--text-accent);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.method-steps ol {
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+}
+
+.method-steps li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.method-tips {
+    background: var(--bg-accent);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-primary);
+}
+
+.method-tips h4 {
+    color: var(--text-accent);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.method-tips ul {
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+}
+
+.method-tips li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.management-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.warning-box {
+    background: var(--bg-warning);
+    border: 1px solid var(--warning);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.warning-box h3 {
+    color: var(--warning);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.warning-box ul {
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+}
+
+.warning-box li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.strategies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Mobile Responsive for Auction House */
+@media (max-width: 768px) {
+    .methods-grid,
+    .management-steps,
+    .strategies-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .method-card,
+    .step-card {
+        padding: 1.5rem;
+    }
+    
+    .method-icon {
+        font-size: 2.5rem;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .warning-box {
+        padding: 1.5rem;
     }
 }

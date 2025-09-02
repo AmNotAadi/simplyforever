@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction House - Simply Forever Wiki</title>
+    <meta name="description" content="Learn how to use the auction house to buy, sell, and bid on items with other players">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Simply Forever Logo" class="logo-img">
+                <span class="logo-text">Simply Forever</span>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="rules.html" class="nav-link" role="menuitem">Rules</a></li>
+                <li role="none"><a href="join.html" class="nav-link" role="menuitem">How to Join</a></li>
+                <li role="none"><a href="community.html" class="nav-link" role="menuitem">Community</a></li>
+                <li role="none"><a href="https://map.simplyforever.xyz" class="nav-link external-link" role="menuitem" target="_blank" rel="noopener">Live Map</a></li>
+            </ul>
+            
+            <div class="nav-external">
+                <a href="https://store.simplyforever.xyz" class="external-link" target="_blank" rel="noopener">Store</a>
+                <a href="wiki.html" class="external-link active">Wiki</a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="wiki.html">Wiki</a> → Auction House
+                </nav>
+                <h1 class="page-title">Auction House</h1>
+                <p class="page-subtitle">Master the art of trading with other players through auctions and bidding</p>
+            </div>
+        </header>
+
+        <!-- Auction House Overview -->
+        <section class="auction-overview">
+            <div class="container">
+                <div class="overview-card">
+                    <h2>🏛️ Welcome to the Auction House</h2>
+                    <p>Our server features the PlayerAuctions plugin, allowing you to buy, sell, and bid on items with other players. You can sell items in two ways: <strong>selling</strong> and <strong>bidding</strong>. Each method has its own advantages and mechanics.</p>
+                    <div class="access-info">
+                        <h3>🚀 Quick Access</h3>
+                        <p>Use <code>/ah</code> to open the auction house interface from anywhere on the server.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two Selling Methods -->
+        <section class="selling-methods">
+            <div class="container">
+                <h2 class="section-title">💰 Two Ways to Sell Items</h2>
+                <div class="methods-grid">
+                    <div class="method-card">
+                        <div class="method-icon">💼</div>
+                        <h3>Direct Selling</h3>
+                        <p>Set a fixed price for your item. Players can buy it immediately at that price.</p>
+                        <div class="method-steps">
+                            <h4>How to Sell:</h4>
+                            <ol>
+                                <li>Hold the item you want to sell in your hand</li>
+                                <li>Type <code>/ah sell (price)</code></li>
+                                <li>Your item will be listed for the specified price</li>
+                            </ol>
+                        </div>
+                        <div class="method-tips">
+                            <h4>💡 Tips:</h4>
+                            <ul>
+                                <li>Research market prices before setting your price</li>
+                                <li>Items sell faster when priced competitively</li>
+                                <li>You can cancel listings before they expire</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">🏆</div>
+                        <h3>Bidding Auctions</h3>
+                        <p>Start an auction with a minimum bid. Players compete by offering higher bids.</p>
+                        <div class="method-steps">
+                            <h4>How to Start a Bid:</h4>
+                            <ol>
+                                <li>Hold the item you want to auction in your hand</li>
+                                <li>Type <code>/ah bid (minimum_price)</code></li>
+                                <li>Players can bid higher than your minimum price</li>
+                                <li>Highest bidder wins when auction expires</li>
+                            </ol>
+                        </div>
+                        <div class="method-tips">
+                            <h4>💡 Tips:</h4>
+                            <ul>
+                                <li>Set a reasonable minimum bid to attract bidders</li>
+                                <li>Popular items often sell for more through bidding</li>
+                                <li>Monitor your auctions to see current highest bids</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Use Auction House -->
+        <section class="auction-mechanics">
+            <div class="container">
+                <h2 class="section-title">⚙️ How to Use the Auction House</h2>
+                
+                <div class="mechanics-grid">
+                    <div class="mechanic-card">
+                        <h3>📥 Accessing the Auction House</h3>
+                        <div class="command-box">
+                            <code>/ah</code>
+                        </div>
+                        <p>This command opens the auction house interface, showing all available items for sale and bidding.</p>
+                    </div>
+                    
+                    <div class="mechanic-card">
+                        <h3>🛒 Buying Items</h3>
+                        <p>Browse through the auction house to find items you want to purchase:</p>
+                        <ul>
+                            <li>Click on items to view details and prices</li>
+                            <li>For direct sales: Click "Buy" to purchase immediately</li>
+                            <li>For bids: Enter your bid amount (must be higher than current bid)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mechanic-card">
+                        <h3>📤 Managing Your Listings</h3>
+                        <p>Keep track of your active auctions and sales:</p>
+                        <ul>
+                            <li>View your current listings in the auction house</li>
+                            <li>Check bid status and current highest bids</li>
+                            <li>Cancel listings if needed (before they expire)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Canceling and Retrieving Items -->
+        <section class="item-management">
+            <div class="container">
+                <h2 class="section-title">🔄 Canceling and Retrieving Items</h2>
+                
+                <div class="management-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Cancel Your Listing</h3>
+                            <p>To cancel an item you've put up for auction:</p>
+                            <ol>
+                                <li>Open the auction house with <code>/ah</code></li>
+                                <li>Find your item in the listings</li>
+                                <li>Shift + right-click on your item</li>
+                                <li>Confirm the cancellation</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Retrieve Expired Items</h3>
+                            <p>To get back items from expired auctions:</p>
+                            <ol>
+                                <li>Open the auction house with <code>/ah</code></li>
+                                <li>Click the "Expired Items" button (house-shaped icon)</li>
+                                <li>Find your expired items in the list</li>
+                                <li>Click to retrieve them back to your inventory</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <h3>⚠️ Important Notes</h3>
+                    <ul>
+                        <li>You can only cancel your own listings</li>
+                        <li>Expired items must be retrieved within a certain time limit</li>
+                        <li>Always check the expired items section regularly</li>
+                        <li>Successful sales and bids will automatically transfer money to your account</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bidding Strategies -->
+        <section class="bidding-strategies">
+            <div class="container">
+                <h2 class="section-title">🎯 Bidding Strategies</h2>
+                
+                <div class="strategies-grid">
+                    <div class="strategy-card">
+                        <h3>💰 Smart Bidding</h3>
+                        <ul>
+                            <li>Set a maximum budget before bidding</li>
+                            <li>Don't get caught up in bidding wars</li>
+                            <li>Research item values to avoid overpaying</li>
+                            <li>Consider the time remaining on auctions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-card">
+                        <h3>⏰ Timing Your Bids</h3>
+                        <ul>
+                            <li>Bid early to establish interest</li>
+                            <li>Place strategic bids near auction end</li>
+                            <li>Monitor auctions you're interested in</li>
+                            <li>Don't wait until the last second</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-card">
+                        <h3>📊 Market Research</h3>
+                        <ul>
+                            <li>Check similar items for price comparison</li>
+                            <li>Observe bidding patterns for popular items</li>
+                            <li>Learn from successful and failed auctions</li>
+                            <li>Stay updated on server economy trends</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section class="quick-reference">
+            <div class="container">
+                <h2 class="section-title">📋 Quick Reference</h2>
+                <div class="reference-grid">
+                    <div class="reference-card">
+                        <h3>Essential Commands</h3>
+                        <ul>
+                            <li><code>/ah</code> - Open auction house</li>
+                            <li><code>/ah sell (price)</code> - Sell item for fixed price</li>
+                            <li><code>/ah bid (price)</code> - Start bidding auction</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reference-card">
+                        <h3>Selling Methods</h3>
+                        <ul>
+                            <li><strong>Direct Selling:</strong> Fixed price, immediate purchase</li>
+                            <li><strong>Bidding:</strong> Minimum bid, competitive auction</li>
+                            <li>Choose based on item value and demand</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="reference-card">
+                        <h3>Item Management</h3>
+                        <ul>
+                            <li>Shift + right-click to cancel listings</li>
+                            <li>Check expired items regularly</li>
+                            <li>Retrieve items from house icon menu</li>
+                            <li>Monitor your active auctions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Simply Forever</h3>
+                    <p>Your eternal Minecraft adventure awaits. Join our community and build something amazing!</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://map.simplyforever.xyz" target="_blank" rel="noopener">Live Map</a></li>
+                        <li><a href="https://store.simplyforever.xyz" target="_blank" rel="noopener">Store</a></li>
+                        <li><a href="wiki.html">Wiki</a></li>
+                        <li><a href="https://discord.gg/VCeAEcGHgf" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Server Info</h4>
+                    <ul>
+                        <li>IP: mc.simplyforever.xyz</li>
+                        <li>Version: 1.20+</li>
+                        <li>Type: Semi-Vanilla SMP</li>
+                        <li>Status: Always Online</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rules.html">Server Rules</a></li>
+                        <li><a href="join.html">How to Join</a></li>
+                        <li><a href="wiki.html">Wiki</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Simply Forever. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
